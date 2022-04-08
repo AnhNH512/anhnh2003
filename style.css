@@ -1,0 +1,146 @@
+@import url('../Page/Font/PingFang\ SC\ Bold/PingFang SC Bold');
+@import url('./Font/PingFang\ SC\ Light/PingFangSCLight.ttf');
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    max-width: 100%;
+    padding: 0;
+    /* background: url('./img/background.png') no-repeat; */
+    /* background-size: cover; */
+
+}
+.wrapper-title {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.wrapper-title img{
+    width: 400px;
+}
+.video {
+    padding: 50px 200px;
+    background: url('./img/backgroundVideo.png');
+    /* margin-bottom: 30px !important; */
+}
+.video .video-title{
+    text-align: center; 
+    font-size: 30px;
+    margin-bottom: 20px;
+    color : #ffff4d;
+}
+.wrapper {
+    /* position: relative; */
+    border : 1px solid;
+    padding: 50px 200px;
+    /* background: url('https://xuconcept.com/wp-content/uploads/2021/11/tai-hinh-nen-mien-phi.jpg') no-repeat; */
+    background: url('./img/background.png') no-repeat;
+    background-size: cover;
+}
+.wrapper-content {
+    position: relative;
+    border : 1px solid #FFF;
+    padding: 100px 200px 50px 200px;
+    /* background: url('https://xuconcept.com/wp-content/uploads/2021/11/tai-hinh-nen-mien-phi.jpg') no-repeat; */
+    /* background: url('./img/background.png') no-repeat;
+    background-size: cover; */
+    /* width: 1240px; */
+}
+.image-video {
+    /* width : 500px; */
+    position : relative
+}
+.image-video:hover + .play-icon{
+    opacity: 1;
+}
+.play-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.play-icon:hover {
+    opacity: 1;
+}
+.video-wrapper {
+    width: 100%;
+    position : relative
+}
+.video-wrapper .image-video {
+    height: 600px;
+}
+.modal-body {
+    padding: 0;
+    background: #000;
+}
+.wrapper-items {
+    margin-top: 15px;
+}
+@media only screen and (max-width : 767px) {
+    .wrapper-items {
+        display: none;
+    }
+    
+}
+.wrapper-button button{
+    width: 100%;
+    background-image: linear-gradient(to top, #ffff4d, #ffff6b, #ffff85, #ffff9c, #ffffb3);
+    border: none;
+    height: 40px;
+    /* display: flex; */
+}
+.wrapper-button {
+    margin-top: 20px;
+}
+.button-group + .button-group {
+    margin-top: 10px;
+}
+/* button {
+    flex-basis: 20%;
+} */
+
+.wrapper-content__items {
+    height: 100%;
+    position: relative;
+}
+.wrapper-content-desc {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    right: 0;
+}
+
+.video .video-button {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.video-button button {
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(to top, #ffff4d, #ffff6b, #ffff85, #ffff9c, #ffffb3);
+    border: none;
+}
+/* .video {
+    margin-bottom: 200px;
+} */
