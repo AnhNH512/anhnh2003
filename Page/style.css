@@ -32,6 +32,7 @@ img {
 .wrapper-title img{
     width: 400px;
 }
+/* backgound wrapper */
 .wrapper {
     border : 1px solid;
     padding: 50px 150px;
@@ -95,14 +96,16 @@ img {
 }
 .play-icon {
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    max-width: 100%;
+    height: auto;
     position: absolute;
     transform: translate(-50%,-50%);
     top:50%;
     left: 50%;
     transition: 0.5s;
+    font-size: 70px;
     opacity: 0;
+    color:#fff;
 }
 .play-icon:hover {
     opacity: 1;
@@ -114,8 +117,9 @@ img {
 .video-wrapper .image-video {
     height: 600px;
 }
+/* back ground video */
 .video {
-    padding: 50px 150px;
+    padding: 50px 0px;
     background: url('./img/backgroundVideo.png');
 }
 .video .video-title{
@@ -132,6 +136,7 @@ img {
     position: relative;
     display: inline-block;
 }
+/* the line on title video */
 .video .video-title p::after{
     margin-left: 20px;
     top: 50%;
@@ -178,9 +183,6 @@ img {
    .wrapper-content {
        padding: 100px 100px 50px;
    }
-   .video {
-       padding: 50px 100px;
-   }
    .wrapper-content-desc {
        height: 45px;
    }
@@ -205,18 +207,12 @@ img {
     .wrapper {
         padding: 50px 70px;
     }
-    .video {
-        padding: 50px 70px;
-    }
 }
 @media only screen and (max-width : 850px) {
     .wrapper-content {
         padding: 70px 50px 20px;
     }
     .wrapper {
-        padding: 50px 50px;
-    }
-    .video {
         padding: 50px 50px;
     }
     .wrapper-title img {
@@ -240,7 +236,7 @@ img {
         border: 10px solid #dab074;
         border-radius: 30px;
     }
-    .video-button {
+    .video-button button{
         display: block;
     }
     .video-wrapper .image-video {
@@ -250,6 +246,12 @@ img {
         position: static !important;
         transform: none !important;
     }
+    .video {
+        background: none;
+    }
+    .video {
+        padding: 20px 0px;
+    }
 }
 
 @media only screen and (max-width : 576px) {
@@ -257,9 +259,6 @@ img {
         padding: 70px 20px 10px;
     }
     .wrapper {
-        padding: 20px 20px;
-    }
-    .video {
         padding: 20px 20px;
     }
     .video .video-title p::after {
